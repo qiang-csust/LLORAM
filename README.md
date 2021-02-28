@@ -3,19 +3,19 @@ LLORAM, An forward and backward private oblivious RAM
 
 //C++ demo
 
-#include "LLORAM.h"
+            #include "LLORAM.h"
 
 
-struct Test
-{
-   char buf[256];   
-}
+            struct Test
+            {
+               char buf[256];   
+            }
 
-int main()
-{
-   LLORAM<Test> oram(20);
-   Test test={"hello world!"};   
-   oram.write(100,test);     
-   Test test2=oram.read(100)
-   printf("%s \r\n",test2.buf);
-}
+            int main()
+            {
+               LLORAM<Test> oram(20);
+               Test test={"hello world!"};   
+               oram.write(100,test);     
+               Test test2=oram.read(100)
+               printf("%s \r\n",test2.buf);
+            }
