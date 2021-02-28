@@ -1,5 +1,5 @@
 # LLORAM
-LLORAM, An forward and backward private oblivious RAM
+LLORAM, A forward and backward private oblivious RAM
 
 //C++ demo
 
